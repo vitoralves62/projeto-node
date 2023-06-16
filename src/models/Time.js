@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const autorSchema = new mongoose.Schema(
+const timeSchema = new mongoose.Schema(
     {
         id: {type: String},
         nome: {type: String, required: true},
@@ -11,6 +11,6 @@ const autorSchema = new mongoose.Schema(
     }
 )
 
-const autores = mongoose.model('autores', autorSchema)
+const time = mongoose.model('time', timeSchema)
 
-export default autores;
+export default time;

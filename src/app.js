@@ -1,8 +1,8 @@
-import express from "express";;
+import express from "express";
 import db from "./config/dbConnect.js";
-import livros from "./models/Livro.js";
+import Jogador from "./models/Jogador.js";
 import routes from "./routes/index.js";
-import LivroController from "./controllers/livrosController.js";
+import JogadoresController from "./controllers/jogadoresController.js";
 
 db.on("error", console.log.bind(console, 'Erro de conexão'))
 db.once("open", () => {
